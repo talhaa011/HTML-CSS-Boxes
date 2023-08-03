@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.3;
+}
+
+nav{
+    position: sticky;
+    background-color:white;
+    padding: 20px;
+}
+.image{
+    list-style-type: none;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 870px;
+}
+.image img{
+    margin-right: 50px;
+}
+.image img:hover{
+    width: 60px;
+}
+.image ul a{
+    color: black;
+    margin: 18px;
+    font-size: 20px;
+}
+.image ul a:hover{
+    font-size: 30px;
+    color: rgb(4, 94, 168);
+}
+.pic{
+    width: 100%;
+    background:linear-gradient( rgba(0,0,0,0.2) , rgba(0,0,0,0.2)), url("12.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.container{
+    display: flex;
+    width: 1350px;
+    height: 500px;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.container .box{
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    height: 355px;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    overflow: hidden;
+    font-family: Arial;
+}
+.box img{
+    padding: auto;
+    width: 280px;
+    height: 180px;
+}
+ul a{
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+ul a:hover{
+    color: rgb(0, 73, 122);
+    transition: 0.3s ease;
+}
+.box .overlay{
+    top: 0%;
+    position: absolute;
+    transform: translateY(101%);
+    transition: 0.6s ease;
+    background-color: rgba(19, 18, 18, 0.9);
+    left: 0%;
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.box:hover .overlay{
+    opacity: 4;
+    transform:translateY(0%);
+}

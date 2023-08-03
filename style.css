@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.8s ease;
+    text-decoration: none;
+}
+nav{
+    background-color: black;
+    position: sticky;
+    padding: 35px;
+}
+.talha{
+    align-items: center;
+    justify-content: center;
+    max-width: 870px;
+    margin: auto;
+    display: flex;
+}
+.talha img{
+    margin-right: 50px;
+
+}
+.talha ul a{
+    color: white;
+    margin: 17px;
+    font-size: 23px;
+}
+.container{
+    width:1350px;
+    height: 500px;
+  /*  padding: 30px;*/
+    gap: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+.container .box{
+  
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+.box img{
+    width: 280px;
+    height: 180px;
+}
+ul a{
+    color: white;
+    margin: 10px;
+    font-size: 30px;
+}
+ul a:hover{
+    color: orange;
+    margin: 10px;
+    font-size: 30px;
+    transition: 0.1s;
+}
+.box .overlay{
+    position: absolute;
+    transform: translateY(101%);
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 13, 13, 0.9);
+    opacity: 0;
+    display: flex;
+    transition: 0.5s ease;
+
+}
+.box:hover .overlay{
+    opacity: 1;
+    transform: translateY(0%);
+}
